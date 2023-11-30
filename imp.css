@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+	background-color: #f5cb3d;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 125px 100px 1500px 150px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer";
+}
+header{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center; 
+    grid-area: header;
+    background-color: #f5cb3d;
+}
+header a{
+    text-decoration: none;
+}
+#cab{
+    font-family: Cambria;
+	
+}
+#origem{
+    margin-right: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    background-color:#f2ba00;
+    font-size: 20px;
+    padding: 8px 34px 7px;
+    border-radius: 10px;
+}
+nav{
+    grid-area: nav;
+    background-color: #d2ae33;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 51px;
+    margin: 0;
+}
+section{
+    text-align: justify;
+    grid-area: section;
+    margin-left: 5px;
+}
+section#txt{
+    margin-top: 20px;
+}
+h1#ti{
+    position: absolute;
+    top: 180px;
+    left: 250px;
+}
+section p{
+    text-align: justify;
+}
+
+}
+#t2{
+    border-top: #ffe387;
+}
+#t2:hover{
+    background-color:#f5ce4e;
+    color: white;
+}
+#t3{
+    border-top: #ffe387;
+}
+#t3:hover{
+    background-color:#f5ce4e;
+    color: white;
+}
+#t4{
+    border-top: #ffe387;
+}
+#t4:hover{
+    background-color:#f5ce4e;
+    color: white;
+}
+h1, h2, p, ul, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+details{
+    margin-left: 3px;
+}
+summary{
+    background: rgb(214, 214, 214);
+}
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+img#cq{ 
+    width: 550px;
+    height: 350px;
+
+}
+img#p{
+    position: absolute;
+   
+    width: 550px;
+    height: 350px;
+}
+
+
+form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+footer{
+    grid-area: footer;
+    background: #f2ba00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.grid-item-1{
+	border-style:solid;
+	padding-top:1px;
+	grid-row:1/1;
+	height: 350px;
+    width: 550px;
+	border-radius: 15px;
+	margin-top: 20px;
+}
+.grid-item-2{
+	border-style:solid;
+	padding-top:1px;
+	grid-row:1/2;
+	height: 300px;
+    width: 550px;
+	border-radius: 10px;
+    margin-top: 200px;
+}

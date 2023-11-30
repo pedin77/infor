@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    display: grid;
+	background-color: #f5cb3d;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 125px 100px 2000px 150px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer";
+}
+header{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center; 
+    grid-area: header;
+    background-color: rgb(219, 208, 208);
+}
+header a{
+    text-decoration: none;
+}
+#cab{
+    font-family: Cambria;
+}
+#origem{
+    margin-right: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    background-color: #eeeaea;
+    font-size: 20px;
+    padding: 8px 34px 7px;
+    border-radius: 10px;
+}
+nav{
+    grid-area: nav;
+    background-color: #b3a8a8;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 51px;
+    margin: 0;
+}
+section{
+    text-align: justify;
+    grid-area: section;
+}
+h1#ti{
+    position: absolute;
+    top: 170px;
+    left: 400px;
+}
+aside{
+    grid-area: aside;
+    margin-top: 20px;
+}
+aside img{
+    margin-left: 10px;
+}
+img#ouro{
+    height: 270px;
+    width: 655px;;
+}
+img#gre{
+    margin-top: 30px;
+    height: 180px;
+    width: 450px;
+}
+img#alq{
+    height: 500px;
+    width: 600px;
+    margin-top: 30px;
+}
+img#at{
+    height: 500px;
+    width: 600px;
+    margin-top: 30px;
+}
+#t1{
+    border-top: 5px solid rgb(18, 2, 255);
+    background: rgb(18, 2, 255);
+    color: white;
+}
+#t2{
+    border-top: 5px solid rgb(17, 21, 230);
+}
+#t2:hover{
+    background-color: rgb(17, 21, 230);
+    color: white;
+}
+#t3{
+    border-top: 5px solid rgb(40, 42, 194);
+}
+#t3:hover{
+    background-color: rgb(42, 42, 194);
+    color: white;
+}
+#t4{
+    border-top: 5px solid rgb(33, 41, 151);
+}
+#t4:hover{
+    background-color: rgb(33, 41, 151);
+    color: white;
+}
+h1, h2, p, ul, li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+details{
+    margin-left: 3px;
+}
+summary{
+    background: rgb(214, 214, 214);
+}
+form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+}
+footer{
+    grid-area: footer;
+    background: rgb(177, 168, 168);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
